@@ -1,0 +1,4 @@
+smtp                    # Shows Simple Mail Transfer Protocol (SMTP) packets; packets contain data from email messages
+ip.src == X.X.X.X       # Filters the packets based on the source IP address (used for identifying the attacker)
+smtp.data.fragment      # Shows the email fragments of messages transfered over in an SMTP session
+smtp.contains "FROM"    # Looks for subject lines that contain "FROM", meaning it is sent

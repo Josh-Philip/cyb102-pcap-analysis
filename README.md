@@ -12,6 +12,36 @@ Business Email Compromises (BECs) are responsible for many phishing scams, incur
 - **Mozilla Thunderbird**: Mozilla's email client which is compatible with Ubuntu Linux, used to read `.eml` files
 
 ## Process
+1. Filters:
+-    `smtp`
+-    `smtp.data.fragment`
+These filters were used to single out SMTP packets out of all the network traffic
+
+2. Email Reconstruction
+On Wireshark, followed TCP stream of SMTP packets to view the full email message
+
+3. Key Indicators of Phishing
+- Suspicious subjects
+- Malicious IP addresses
+
+4. Identified Bad Actor
+Traced suspicious `smtp` packets to find a single attacker's IP
+
 ## Key Findings
+**Malicious IP:**: 10.6.1.104
+**Subject lines of three phishing emails**:
+- Read carefully! - dayrit
+- Your private data! - 2645885
+- Safe your privacy! - incretible
+
 ## Screenshots
+On Wireshark, exported IMF object to obtain `.eml` file
+Used **Mozilla Thunderbird** as email client to view the email messages contained in the `.eml` file.
+
+**Subject: Read Carefully! - dayrit**
+![Screenshot 1](Screenshots/em1.png)
+**Subject: Your private data! - 2645885**
+![Screenshot 2](Screenshots/em2.png)
+**SubjectL Safe your privacy! - incretible**
+![Screenshot 3](Screenshots/em3.png)
 ## Reflection

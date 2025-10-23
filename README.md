@@ -13,19 +13,20 @@ Business Email Compromises (BECs) are responsible for many phishing scams, incur
 
 ## Process
 1. Filters:
--    `smtp`
--    `smtp.data.fragment`
-These filters were used to single out SMTP packets out of all the network traffic
+    - `smtp`
+    - `smtp.data.fragment`  
+      These filters were used to single out SMTP packets out of all the network traffic.
 
 2. Email Reconstruction
-On Wireshark, followed TCP stream of SMTP packets to view the full email message
+    - On Wireshark, followed TCP stream of SMTP packets to view the full email message.
 
 3. Key Indicators of Phishing
-- Suspicious subjects
-- Malicious IP addresses
+    - Suspicious subjects
+    - Malicious IP addresses
 
 4. Identified Bad Actor
-Traced suspicious `smtp` packets to find a single attacker's IP
+    - Traced suspicious `smtp` packets to find a single attacker's IP
+
 
 ## Key Findings
 **Malicious IP:**: 10.6.1.104
@@ -38,10 +39,10 @@ Traced suspicious `smtp` packets to find a single attacker's IP
 On Wireshark, exported IMF object to obtain `.eml` file
 Used **Mozilla Thunderbird** as email client to view the email messages contained in the `.eml` file.
 
-**Subject: Read Carefully! - dayrit**
+
 ![Screenshot 1](Screenshots/em1.png)
-**Subject: Your private data! - 2645885**
+
 ![Screenshot 2](Screenshots/em2.png)
-**SubjectL Safe your privacy! - incretible**
+
 ![Screenshot 3](Screenshots/em3.png)
 ## Reflection

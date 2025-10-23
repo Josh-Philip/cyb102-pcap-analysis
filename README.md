@@ -29,7 +29,8 @@ Business Email Compromises (BECs) are responsible for many phishing scams, incur
 
 
 ## Key Findings
-**Malicious IP:**: 10.6.1.104
+**Malicious IP**: 10.6.1.104
+
 **Subject lines of three phishing emails**:
 - Read carefully! - dayrit
 - Your private data! - 2645885
@@ -38,7 +39,6 @@ Business Email Compromises (BECs) are responsible for many phishing scams, incur
 ## Screenshots
 On Wireshark, exported IMF object to obtain `.eml` file
 Used **Mozilla Thunderbird** as email client to view the email messages contained in the `.eml` file.
-
 
 ![Screenshot 1](Screenshots/em1.png)
 

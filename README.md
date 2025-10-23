@@ -38,7 +38,7 @@ Business Email Compromises (BECs) are responsible for many phishing scams, incur
 
 ## Screenshots
 On Wireshark, exported IMF object to obtain `.eml` file
-Used **Mozilla Thunderbird** as email client to view the email messages contained in the `.eml` file.
+Used **Mozilla Thunderbird** as email client to view the email messages contained in the `.eml` files.
 
 ![Screenshot 1](Screenshots/em1.png)
 
@@ -46,3 +46,11 @@ Used **Mozilla Thunderbird** as email client to view the email messages containe
 
 ![Screenshot 3](Screenshots/em3.png)
 ## Reflection
+This projected helped me understand how attackers exploit SMTP protocols, and how blue team cybersecurity specialists can use tools like Wireshark to sniff packets and analyze network traffic.
+
+I developed skills in
+- Email Forensics
+- Packet Sniffing
+- Packet Filtering
+- Email Reconstruction
+- Identifying malicious network traffic
